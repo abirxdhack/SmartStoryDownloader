@@ -1,0 +1,30 @@
+[project]
+name = "telegram-stories-api"
+version = "1.0.0"
+description = "Telegram Stories Downloader API - FastAPI backend with Pyrogram"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pyrofork",
+    "tgcrypto",
+    "aiohttp",
+    "uvloop",
+    "python-dateutil"
+]
+
+[project.scripts]
+app = "api:app"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+exclude = ["templates*", "static*", "assets*", "frontend*", "tests*"]
