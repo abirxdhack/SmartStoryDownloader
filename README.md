@@ -199,11 +199,11 @@ The API will be available at `http://localhost:4747`
 
 ```
 .
-â”œâ”€â”€ api.py              # Main FastAPI application
-â”œâ”€â”€ config.py           # Configuration file
-â”œâ”€â”€ requirements.txt    # Python dependencies
-â”œâ”€â”€ pyproject.toml     # Project metadata
-â””â”€â”€ README.md          # This file
+ api.py              
+ config.py           
+ requirements.txt    
+ pyproject.toml     
+ README.md          
 ```
 
 ## Dependencies
